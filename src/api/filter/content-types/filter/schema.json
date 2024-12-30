@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filters",
+  "info": {
+    "singularName": "filter",
+    "pluralName": "filters",
+    "displayName": "filter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FCRA": {
+      "type": "enumeration",
+      "enum": [
+        "Chemical Biology & Molecular Modelling",
+        "Epidemiological Studies & Experimental Models",
+        "Omics & Health Informatics",
+        "AI for Sciences"
+      ]
+    },
+    "research_focus": {
+      "type": "enumeration",
+      "enum": [
+        "Cell and Developmental Biology",
+        "Bioresource and Agriculture",
+        "Environmental Health and Ecology",
+        "Analytical Science",
+        "Drug Discovery",
+        "Chemical Biology",
+        "Advanced Materials",
+        "AI and Machine Learning",
+        "Distributed Systems",
+        "Data Analytics and Management",
+        "Computer Vision",
+        "Applied and Computational Mathematics ",
+        "Data Science and Statistics",
+        "Foundations in AI",
+        "Material Science",
+        "Complex Systems"
+      ]
+    },
+    "AvailabilityforSupervision": {
+      "type": "enumeration",
+      "enum": [
+        "PhD supervision",
+        "Masters by Research supervision",
+        "Summer Research Programme"
+      ]
+    }
+  }
+}

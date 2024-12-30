@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fcras",
+  "info": {
+    "singularName": "fcra",
+    "pluralName": "fcras",
+    "displayName": "FCRA",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

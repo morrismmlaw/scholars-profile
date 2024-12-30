@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "available_supervisions",
+  "info": {
+    "singularName": "available-supervision",
+    "pluralName": "available-supervisions",
+    "displayName": "AvailableSupervision"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

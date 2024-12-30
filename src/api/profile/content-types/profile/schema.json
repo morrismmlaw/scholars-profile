@@ -1,0 +1,122 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ssoid": {
+      "type": "string",
+      "unique": true
+    },
+    "keyid": {
+      "type": "string",
+      "unique": true
+    },
+    "salute": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "othername": {
+      "type": "string"
+    },
+    "dept": {
+      "type": "string"
+    },
+    "post": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "name": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "chiname": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "customField",
+      "options": {
+        "preset": "default"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "research_interest": {
+      "type": "customField",
+      "options": {
+        "preset": "default"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "SDG": {
+      "type": "string"
+    },
+    "sdgs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sdg.sdg"
+    },
+    "research_centres": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::research-centre.research-centre",
+      "inversedBy": "profiles"
+    },
+    "photoURL": {
+      "type": "string"
+    },
+    "uploadPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "fcras": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fcra.fcra"
+    },
+    "research_foci": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::research-focus.research-focus"
+    },
+    "available_supervisions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::available-supervision.available-supervision"
+    },
+    "scopusURL": {
+      "type": "string"
+    },
+    "orcidURL": {
+      "type": "string"
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::department.department"
+    }
+  }
+}

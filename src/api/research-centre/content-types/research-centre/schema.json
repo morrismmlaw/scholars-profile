@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_centres",
+  "info": {
+    "singularName": "research-centre",
+    "pluralName": "research-centres",
+    "displayName": "researchCentre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "abbr": {
+      "type": "string"
+    },
+    "profiles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::profile.profile",
+      "mappedBy": "research_centres"
+    }
+  }
+}

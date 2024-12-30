@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_outputs",
+  "info": {
+    "singularName": "research-output",
+    "pluralName": "research-outputs",
+    "displayName": "researchOutput",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recno": {
+      "type": "string"
+    },
+    "uoacode": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "othername": {
+      "type": "string"
+    },
+    "chiname": {
+      "type": "string"
+    },
+    "dept": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "customField",
+      "options": {
+        "preset": "default"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

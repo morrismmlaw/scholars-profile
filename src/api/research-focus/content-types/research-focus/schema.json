@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_foci",
+  "info": {
+    "singularName": "research-focus",
+    "pluralName": "research-foci",
+    "displayName": "researchFocus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

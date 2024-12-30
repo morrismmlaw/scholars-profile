@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sdgs",
+  "info": {
+    "singularName": "sdg",
+    "pluralName": "sdgs",
+    "displayName": "sdg",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sdgid": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "iconweb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
